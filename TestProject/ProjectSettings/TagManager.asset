@@ -8,6 +8,7 @@ TagManager:
   - wall
   - PhysicsUpgrade
   - JumpUpgrade
+  - Platform
   layers:
   - Default
   - TransparentFX
