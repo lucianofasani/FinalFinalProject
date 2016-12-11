@@ -1,10 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/scenes/8BitScene.unity
-||||||| merged common ancestors
 - path: Assets/scenes/SceneDenae.unity
-=======
-- path: Assets/scenes/Scene2Denae.unity
->>>>>>> master
   isLoaded: 1
   isActive: 1
