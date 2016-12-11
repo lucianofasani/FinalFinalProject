@@ -12,10 +12,12 @@ public class CharacterControllerScript : MonoBehaviour {
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
     public bool jump = false;
-    public string message = "Power Up: Jumping acquired. Physics!";
+    public Font myFont;
+    public string message;
     public float displayTime;
     public bool displayMessage = false;
 	public JumpSound jumpSound;
+    public bool displayMessage2 = false;
 
     // Use this for initialization
     void Start()
@@ -69,6 +71,11 @@ public class CharacterControllerScript : MonoBehaviour {
             displayMessage = true;
             displayTime = 3;
         }
+        if(other.name == "Arrow3_0")
+        {
+            displayMessage2 = true;
+            displayTime = 3;
+        }
 
     }
 
@@ -77,7 +84,15 @@ public class CharacterControllerScript : MonoBehaviour {
     {
         if (displayMessage)
         {
+            GUI.skin.font = myFont;
+            GUI.skin.label.fontSize = 10;
             GUI.Label(new Rect((Screen.width / 2)-75, (Screen.height / 2)-50, 200f, 200f), message);
+        }
+        if (displayMessage2)
+        {
+            GUI.skin.font = myFont;
+            GUI.skin.label.fontSize = 10;
+            GUI.Label(new Rect((Screen.width / 2) - 75, (Screen.height / 2) - 50, 200f, 200f), "MegaJump Acquired!");
         }
     }
 

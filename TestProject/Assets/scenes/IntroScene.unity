@@ -1351,7 +1351,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   jump: 0
-  message: 'Power Up: Jumping acquired.'
+  myFont: {fileID: 12800000, guid: 88be0d28fb2ed4e499bcc66e9731d148, type: 3}
+  message: 'Physics Power Up: Jumping acquired. Use SpaceBar to Jump'
   displayTime: 0
   displayMessage: 0
   jumpSound: {fileID: 1689961690}
