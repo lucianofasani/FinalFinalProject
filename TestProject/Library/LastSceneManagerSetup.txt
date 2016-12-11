@@ -1,4 +1,10 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/scenes/ModernScene.unity
+||||||| merged common ancestors
+- path: Assets/scenes/SceneDenae.unity
+=======
+- path: Assets/scenes/StageL1.unity
+>>>>>>> 85be4797ebb7b3639a7fdc3a5597d6a5776927ef
   isLoaded: 1
   isActive: 1
