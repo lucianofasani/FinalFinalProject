@@ -6,6 +6,7 @@ public class OnFloor5 : MonoBehaviour {
     public float displayTime;
     public float cameraSwitch;
     public bool displayMessage = false;
+    public Font myFont;
     // Use this for initialization
     void Start () {
 	
@@ -41,7 +42,9 @@ public class OnFloor5 : MonoBehaviour {
     {
         if (displayMessage)
         {
-            GUI.Label(new Rect((Screen.width / 2) - 75, (Screen.height / 2) - 30, 200f, 200f), "Defeat the BOSS!!!");
+            GUI.skin.font = myFont;
+            GUI.skin.label.fontSize = 10;
+            GUI.Label(new Rect((Screen.width / 2) - 75, (Screen.height / 2) - 30, 200f, 200f), "Grab powerup to defeat the BOSS!!!");
         }
     }
 }
