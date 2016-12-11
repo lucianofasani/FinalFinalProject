@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/SceneDenae.unity
+- path: Assets/scenes/8BitScene.unity
   isLoaded: 1
   isActive: 1
