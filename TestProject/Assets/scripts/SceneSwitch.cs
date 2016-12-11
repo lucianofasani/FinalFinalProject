@@ -6,7 +6,7 @@ public class SceneSwitch : MonoBehaviour {
 
 	public enum Stages
 	{
-		STAGE1, SCENEDENAE, STAGEL1, STAGEL2, INTROSCENE
+		STAGE1, SCENEDENAE, STAGEL1, STAGEL2, INTROSCENE, FIRSTSTAGE
 	}
 
 	public Stages myStage;
@@ -27,7 +27,7 @@ public class SceneSwitch : MonoBehaviour {
 		if (other.gameObject.name == "Player") {
 			//string currentScene = SceneManager.GetActiveScene.name;
 			if (myStage == Stages.INTROSCENE) {
-				SceneManager.LoadScene ("Stage1");
+				SceneManager.LoadScene ("FirstStage");
 				SceneManager.UnloadScene ("IntroScene");
 				Destroy (gameObject);
 			} else if (myStage == Stages.STAGE1) {
@@ -42,7 +42,10 @@ public class SceneSwitch : MonoBehaviour {
 				SceneManager.LoadScene ("StageL2");
 				SceneManager.UnloadScene ("StageL1");
 				Destroy (gameObject);
-			} 
+			} else if (myStage == Stages.FIRSTSTAGE) {
+				SceneManager.LoadScene ("SceneDenae");
+				SceneManager.UnloadScene ("FirstStage");
+			}
 		}
 	}
 

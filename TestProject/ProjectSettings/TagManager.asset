@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - enemy
+  - wall
+  - PhysicsUpgrade
+  - JumpUpgrade
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -39,9 +43,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: BackColor
-    uniqueID: 2784302823
-    locked: 0
   - name: Background
     uniqueID: 167123897
     locked: 0
