@@ -425,7 +425,6 @@ GameObject:
   - 124: {fileID: 495881516}
   - 81: {fileID: 495881515}
   - 114: {fileID: 495881520}
-  - 114: {fileID: 495881521}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -517,19 +516,6 @@ MonoBehaviour:
   lookAheadFactor: 3
   lookAheadReturnSpeed: 0.5
   lookAheadMoveThreshold: 0.1
---- !u!114 &495881521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 495881514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b58dc04c4a939d4d86473572dd35337, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 988275440}
-  enemy: {fileID: 861342217}
 --- !u!4 &606802123 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a038b284634e29f4aaf058814aa61a6f, type: 2}
@@ -920,11 +906,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 988275441}
   m_RootOrder: 0
---- !u!1 &861342217 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000011196971482, guid: 5903d31977a975c44b1d19b5ef55b74e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1400200587}
 --- !u!1 &899076528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,13 +1031,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 988275440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: -28.98, y: -1, z: 0}
-||||||| merged common ancestors
   m_LocalPosition: {x: 124.47, y: 5.81, z: 0}
-=======
-  m_LocalPosition: {x: -28.16, y: -2.32, z: 0}
->>>>>>> DenaeBranch
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1092,17 +1067,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   jump: 1
-<<<<<<< HEAD
-  myFont: {fileID: 0}
-||||||| merged common ancestors
-=======
-  myFont: {fileID: 12800000, guid: 88be0d28fb2ed4e499bcc66e9731d148, type: 3}
->>>>>>> DenaeBranch
   message: 'Power Up: Jumping acquired.'
   displayTime: 0
   displayMessage: 0
   jumpSound: {fileID: 988275447}
-  displayMessage2: 0
 --- !u!50 &988275444
 Rigidbody2D:
   serializedVersion: 2
@@ -1743,7 +1711,7 @@ Animator:
   m_GameObject: {fileID: 1635507004}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1fdddc544ee12944f9e6e6473a6c603c, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2095,12 +2063,6 @@ MonoBehaviour:
   displayTime: 0
   cameraSwitch: 0
   displayMessage: 0
-<<<<<<< HEAD
-  myFont: {fileID: 0}
-||||||| merged common ancestors
-=======
-  myFont: {fileID: 12800000, guid: 88be0d28fb2ed4e499bcc66e9731d148, type: 3}
->>>>>>> DenaeBranch
 --- !u!1 &1903093543
 GameObject:
   m_ObjectHideFlags: 0
