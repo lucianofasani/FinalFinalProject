@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/scenes/ModernScene.unity
-=======
-- path: Assets/scenes/Scene2Denae.unity
->>>>>>> LucianoBranch
+- path: Assets/scenes/StageL1.unity
   isLoaded: 1
   isActive: 1

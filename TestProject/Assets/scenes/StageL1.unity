@@ -17598,7 +17598,7 @@ MonoBehaviour:
   maxHealth: 5
   distance: 0
   wakeRange: 8
-  shootInterval: 2
+  shootInterval: 0.5
   bulletSpeed: 5
   bulletTimer: 0
   awake: 0
@@ -21084,6 +21084,7 @@ MonoBehaviour:
   displayTime: 0
   displayMessage: 0
   rb2d: {fileID: 0}
+  jumpSound: {fileID: 0}
   curHealth: 0
   maxHealth: 3
 --- !u!95 &1420936740
