@@ -1031,7 +1031,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 988275440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 124.47, y: 5.81, z: 0}
+  m_LocalPosition: {x: -28.98, y: -1, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1067,10 +1067,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   jump: 1
+  myFont: {fileID: 0}
   message: 'Power Up: Jumping acquired.'
   displayTime: 0
   displayMessage: 0
   jumpSound: {fileID: 988275447}
+  displayMessage2: 0
 --- !u!50 &988275444
 Rigidbody2D:
   serializedVersion: 2
@@ -2063,6 +2065,7 @@ MonoBehaviour:
   displayTime: 0
   cameraSwitch: 0
   displayMessage: 0
+  myFont: {fileID: 0}
 --- !u!1 &1903093543
 GameObject:
   m_ObjectHideFlags: 0
