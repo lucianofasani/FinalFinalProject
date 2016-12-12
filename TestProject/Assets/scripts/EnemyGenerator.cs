@@ -7,8 +7,10 @@ public class EnemyGenerator : MonoBehaviour {
 	public int startDirection;
 	public Vector3 position;
 	public Quaternion rotation;
+	public int spawnTime;
+
 	void Start () {
-		InvokeRepeating ("Spawn", 1, 5);
+		InvokeRepeating ("Spawn", 1, spawnTime);
 	}
 
 	// Update is called once per frame

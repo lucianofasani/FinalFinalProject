@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour {
 	private Animator anim;
 
 	void Awake(){
-		//anim = gameObject.GetComponent<Animator>();
+		anim = gameObject.GetComponent<Animator> ();
 		attackTrigger.enabled = false;
 	
 	}
@@ -34,6 +34,8 @@ public class PlayerAttack : MonoBehaviour {
 				attackTrigger.enabled = false;
 			}
 		}
+
+		anim.SetBool ("Attacking", attacking);
 	}
 
 }
