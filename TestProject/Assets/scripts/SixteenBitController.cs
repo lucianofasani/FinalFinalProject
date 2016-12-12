@@ -118,9 +118,11 @@ public class SixteenBitController : MonoBehaviour {
 	}
 
 	public void Damage(int dmg){
-	
 		curHealth -= dmg;
-	
+	}
+
+	public void AddHealth(int health){
+		curHealth += health;
 	}
 
 	public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector3 knockbackDir){
@@ -156,4 +158,18 @@ public class SixteenBitController : MonoBehaviour {
 
 		yield return 0;
 	}
+
+	public IEnumerator EnemyKnockback(float knockDur, float knockbackPwr, Vector3 knockbackDir){
+
+		float timer = 0;
+
+		while (knockDur > timer) {
+			timer += Time.deltaTime; //deltaTime counts in seconds
+
+			rb2d.AddForce (new Vector3 (knockbackPwr, 500, transform.position.z));
+		}
+
+		yield return 0;
+	}
+
 }
