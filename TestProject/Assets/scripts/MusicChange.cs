@@ -15,10 +15,11 @@ public class MusicChange : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter2D()
+	void OnCollisionEnter2D(Collision2D other)
 	{
-		source.clip = songToSwitch;
-		Destroy (gameObject);
-		source.Play ();
+			source.clip = songToSwitch;
+			Destroy (gameObject);
+			source.Play ();
+		
 	}
 }
