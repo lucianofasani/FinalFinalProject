@@ -86,13 +86,13 @@ public class CharacterControllerScript : MonoBehaviour {
         {
             GUI.skin.font = myFont;
             GUI.skin.label.fontSize = 10;
-            GUI.Label(new Rect((Screen.width / 2)-75, (Screen.height / 2)-50, 200f, 200f), message);
+            GUI.Label(new Rect((Screen.width / 2)-75, (Screen.height / 2)-100, 400f, 400f), message);
         }
         if (displayMessage2)
         {
             GUI.skin.font = myFont;
             GUI.skin.label.fontSize = 10;
-            GUI.Label(new Rect((Screen.width / 2) - 75, (Screen.height / 2) - 50, 200f, 200f), "MegaJump Acquired!");
+            GUI.Label(new Rect((Screen.width / 2) - 75, (Screen.height / 2)-100, 200f, 200f), "MegaJump Acquired!");
         }
     }
 

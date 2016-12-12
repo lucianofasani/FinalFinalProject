@@ -4,8 +4,7 @@ using System.Collections;
 public class MusicChange : MonoBehaviour {
 
 	public AudioSource source;
-	public AudioClip song1;
-	public AudioClip song2;
+	public AudioClip songToSwitch;
 	// Use this for initialization
 	void Start () {
 	
@@ -16,8 +15,10 @@ public class MusicChange : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter2D(Collision2D other)
+	void OnCollisionEnter2D()
 	{
-		AudioSource.PlayClipAtPoint (song2, transform.position, 0.5f);
+		source.clip = songToSwitch;
+		Destroy (gameObject);
+		source.Play ();
 	}
 }
