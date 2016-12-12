@@ -49,6 +49,9 @@ TagManager:
   - name: Background
     uniqueID: 167123897
     locked: 0
+  - name: Turrets
+    uniqueID: 496383313
+    locked: 0
   - name: Platforms
     uniqueID: 1742770303
     locked: 0
