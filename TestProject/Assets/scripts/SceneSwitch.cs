@@ -6,7 +6,7 @@ public class SceneSwitch : MonoBehaviour {
 
 	public enum Stages
 	{
-		STAGE1, SCENEDENAE, STAGEL1, STAGEL2, INTROSCENE, FIRSTSTAGE
+		STAGE1, SCENEDENAE, STAGEL1, STAGEL2, INTROSCENE, FIRSTSTAGE, SCENE2DENAE, MODERNSCENE
 	}
 
 	public Stages myStage;
@@ -25,27 +25,35 @@ public class SceneSwitch : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.gameObject.name == "Player") {
-			//string currentScene = SceneManager.GetActiveScene.name;
-			if (myStage == Stages.INTROSCENE) {
-				SceneManager.LoadScene ("FirstStage");
-				SceneManager.UnloadScene ("IntroScene");
-				Destroy (gameObject);
-			} else if (myStage == Stages.STAGE1) {
-				SceneManager.LoadScene ("SceneDenae");
-				SceneManager.UnloadScene ("Stage1");
-				Destroy (gameObject);
-			} else if (myStage == Stages.SCENEDENAE) {
-				SceneManager.LoadScene ("StageL1");
-				SceneManager.UnloadScene ("SceneDenae");
-				Destroy (gameObject);
-			} else if (myStage == Stages.STAGEL1) {
-				SceneManager.LoadScene ("StageL2");
-				SceneManager.UnloadScene ("StageL1");
-				Destroy (gameObject);
-			} else if (myStage == Stages.FIRSTSTAGE) {
-				SceneManager.LoadScene ("SceneDenae");
-				SceneManager.UnloadScene ("FirstStage");
-			}
+            //string currentScene = SceneManager.GetActiveScene.name;
+            if (myStage == Stages.INTROSCENE)
+            {
+                SceneManager.LoadScene("FirstStage");
+                SceneManager.UnloadScene("IntroScene");
+                Destroy(gameObject);
+            }
+            else if (myStage == Stages.FIRSTSTAGE)
+            {
+                SceneManager.LoadScene("SceneDenae");
+                SceneManager.UnloadScene("FirstStage");
+            }
+            else if (myStage == Stages.SCENEDENAE)
+            {
+                SceneManager.LoadScene("Scene2Denae");
+                SceneManager.UnloadScene("SceneDenae");
+                Destroy(gameObject);
+            }
+            else if (myStage == Stages.SCENE2DENAE) {
+                SceneManager.LoadScene("StageL1");
+                SceneManager.UnloadScene("Scene2Denae");
+                Destroy(gameObject);
+            }
+            else if (myStage == Stages.STAGEL1)
+            {
+                SceneManager.LoadScene("ModernScene");
+                SceneManager.UnloadScene("StageL1");
+                Destroy(gameObject);
+            }
 		}
 	}
 
