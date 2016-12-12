@@ -10,6 +10,7 @@ public class TitleScreen : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		oldColor = title.GetComponent<Text> ().color;
+		StartCoroutine ("FlashText");
 	}
 	
 	// Update is called once per frame
@@ -18,9 +19,12 @@ public class TitleScreen : MonoBehaviour {
 	}
 
 	IEnumerator FlashText(){
-		yield return new WaitForSeconds (0.3f);
-		title.GetComponent<Text> ().color = newColor;
-		yield return new WaitForSeconds (0.3f);
-		title.GetComponent<Text> ().color = oldColor;
+
+		while (true) {
+			yield return new WaitForSeconds (0.3f);
+			title.GetComponent<Text> ().color = newColor;
+			yield return new WaitForSeconds (0.3f);
+			title.GetComponent<Text> ().color = oldColor;
+		}
 	}
 }

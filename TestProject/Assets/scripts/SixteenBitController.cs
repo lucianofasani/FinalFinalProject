@@ -16,6 +16,7 @@ public class SixteenBitController : MonoBehaviour {
 	public float displayTime;
 	public bool displayMessage = false;
 	public Rigidbody2D rb2d;
+	public JumpSound jumpSound;
 
 	public int curHealth;
 	public int maxHealth = 100;
@@ -56,6 +57,7 @@ public class SixteenBitController : MonoBehaviour {
 		if (jump && grounded && Input.GetKeyDown(KeyCode.Space))
 		{
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+			jumpSound.Jump ();
 		}
 
 		//decrement the time the message stays on the screen
