@@ -4,6 +4,7 @@ using System.Collections;
 public class BlockyBoss : MonoBehaviour {
     public float speed;
     private bool dirRight = true;
+	public SpriteRenderer Boss;
 
     // Use this for initialization
     void Start () {
@@ -25,11 +26,13 @@ public class BlockyBoss : MonoBehaviour {
         if (transform.position.x >= 118)
         {
             dirRight = false;
+			Boss.flipX = true;
         }
 
         if (transform.position.x <= 98)
         {
             dirRight = true;
+			Boss.flipX = false;
         }
     }
 }
