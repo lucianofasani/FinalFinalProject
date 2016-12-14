@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TitleScreen : MonoBehaviour {
 
@@ -15,7 +16,11 @@ public class TitleScreen : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		if(Input.GetKeyDown(KeyCode.Return))
+		{
+			SceneManager.LoadScene ("IntroScene");
+			SceneManager.UnloadScene ("Title Screen");
+		}
 	}
 
 	IEnumerator FlashText(){
