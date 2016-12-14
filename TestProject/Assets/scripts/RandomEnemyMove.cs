@@ -6,7 +6,7 @@ public class RandomEnemyMove : MonoBehaviour {
     public float min;
     public float max;
     private bool dirRight = true;
-
+	public SpriteRenderer enemy;
     // Use this for initialization
     void Start () {
 	}
@@ -26,11 +26,13 @@ public class RandomEnemyMove : MonoBehaviour {
         if (transform.position.x >= max)
         {
             dirRight = false;
+			enemy.flipX = true;
         }
 
         if (transform.position.x <= min)
         {
             dirRight = true;
+			enemy.flipX = false;
         }
     }
 

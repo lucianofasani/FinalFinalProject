@@ -19,10 +19,12 @@ public class CharacterControllerScript : MonoBehaviour {
 	public JumpSound jumpSound;
     public bool displayMessage2 = false;
 
+	private Animator anim;
+
     // Use this for initialization
     void Start()
     {
-	
+		anim = gameObject.GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -61,6 +63,7 @@ public class CharacterControllerScript : MonoBehaviour {
             displayMessage = false;
         }
 
+		anim.SetFloat ("Speed", Mathf.Abs (Input.GetAxis ("Horizontal")));
     }
 
     //if the player meets with a power up, flip the displayMessage to true
