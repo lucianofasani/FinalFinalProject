@@ -2097,6 +2097,8 @@ MonoBehaviour:
   displayMessage: 0
   jumpSound: {fileID: 954823742}
   displayMessage2: 0
+  displayMessage3: 0
+  displayMessage4: 0
 --- !u!61 &954823745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2264,11 +2266,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 335858f931f844549a80195936a519d7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 358fa14e2c89a464489d405a0e9cfe5d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   Priority: 128
