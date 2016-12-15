@@ -595,7 +595,15 @@ MonoBehaviour:
 
 
 
-    Fin'
+    Fin
+
+
+
+
+
+
+
+    Press Enter to play again!'
 --- !u!222 &2119199985
 CanvasRenderer:
   m_ObjectHideFlags: 0

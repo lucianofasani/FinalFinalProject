@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class SixteenBitEnemy : MonoBehaviour {
 
@@ -55,6 +56,10 @@ public class SixteenBitEnemy : MonoBehaviour {
 		}
 
 		if(curHealth <= 0){
+			if (enemy.name == "FinalBoss") {
+				SceneManager.LoadScene ("Credits");
+				SceneManager.UnloadScene ("ModernScene");
+			}
 			Destroy (gameObject);
 		}
 

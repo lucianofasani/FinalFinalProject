@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class FinalBoss : MonoBehaviour {
 
@@ -28,6 +29,7 @@ public class FinalBoss : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
 	}
 
 	IEnumerator BossFight(){

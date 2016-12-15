@@ -428,7 +428,7 @@ GameObject:
   - 61: {fileID: 824527687}
   m_Layer: 10
   m_Name: ExitTrigger
-  m_TagString: Untagged
+  m_TagString: ExitTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -457,7 +457,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e7afb80683e4fea8e7a928472ec15b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myFont: {fileID: 12800000, guid: 88be0d28fb2ed4e499bcc66e9731d148, type: 3}
   exit: {fileID: 505463110}
+  player: {fileID: 1689961684}
 --- !u!61 &824527687
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1295,8 +1297,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: Welcome to Pinkerton, an evolving platformer! I'm Navi, your guide. Nice
-    to meet you!
+  m_Text: Welcome to Pinkerton, an evolving platformer! It's time to begin your adventure!
 --- !u!222 &1629417452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1458,11 +1459,13 @@ MonoBehaviour:
     m_Bits: 512
   jump: 0
   myFont: {fileID: 12800000, guid: 88be0d28fb2ed4e499bcc66e9731d148, type: 3}
-  message: 'Physics Power Up: Jumping acquired. Use SpaceBar to Jump'
+  message: Jumping acquired! Use SpaceBar to Jump. Take that, physics!
   displayTime: 0
   displayMessage: 0
   jumpSound: {fileID: 1689961690}
   displayMessage2: 0
+  displayMessage3: 0
+  displayMessage4: 0
 --- !u!50 &1689961687
 Rigidbody2D:
   serializedVersion: 2

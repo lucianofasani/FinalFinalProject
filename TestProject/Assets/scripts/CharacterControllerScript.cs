@@ -18,6 +18,8 @@ public class CharacterControllerScript : MonoBehaviour {
     public bool displayMessage = false;
 	public JumpSound jumpSound;
     public bool displayMessage2 = false;
+	public bool displayMessage3 = false;
+	public bool displayMessage4 = false;
 
 	private Animator anim;
 
@@ -61,6 +63,8 @@ public class CharacterControllerScript : MonoBehaviour {
         if (displayTime <= 0.0)
         {
             displayMessage = false;
+			displayMessage3 = false;
+			displayMessage4 = false;
         }
 
 		anim.SetFloat ("Speed", Mathf.Abs (Input.GetAxis ("Horizontal")));
@@ -79,6 +83,14 @@ public class CharacterControllerScript : MonoBehaviour {
             displayMessage2 = true;
             displayTime = 3;
         }
+		if (other.tag == "PhysicsUpgrade") {
+			displayMessage3 = true;
+			displayTime = 5;
+		}
+		if (other.tag == "ExitTrigger") {
+			displayMessage4 = true;
+			displayTime = 5;
+		}
 
     }
 
@@ -88,15 +100,25 @@ public class CharacterControllerScript : MonoBehaviour {
         if (displayMessage)
         {
             GUI.skin.font = myFont;
-            GUI.skin.label.fontSize = 10;
+            GUI.skin.label.fontSize = 12;
             GUI.Label(new Rect((Screen.width / 2)-75, (Screen.height / 2)-100, 400f, 400f), message);
         }
         if (displayMessage2)
         {
             GUI.skin.font = myFont;
-            GUI.skin.label.fontSize = 10;
+            GUI.skin.label.fontSize = 12;
             GUI.Label(new Rect((Screen.width / 2) - 75, (Screen.height / 2)-100, 200f, 200f), "MegaJump Acquired!");
         }
+		if (displayMessage3) {
+			GUI.skin.font = myFont;
+			GUI.skin.label.fontSize = 12;
+			GUI.Label(new Rect((Screen.width / 2) - 75, (Screen.height / 2)-100, 200f, 200f), "You got physics! Newton would be proud.");
+		}
+		if (displayMessage4) {
+			GUI.skin.font = myFont;
+			GUI.skin.label.fontSize = 14;
+			GUI.Label (new Rect ((Screen.width / 2) - 75, (Screen.height / 2) - 100, 200f, 200f), "Hey, you're pretty good at this! Let's put those skills to the test.");
+		}
     }
 
     void Flip()//Trick for switching left and right
