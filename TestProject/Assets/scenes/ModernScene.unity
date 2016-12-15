@@ -21052,6 +21052,28 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &812853732 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011496623588, guid: 27dc7eba037b64a5f93605def427592a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1857665448}
+--- !u!95 &812853733
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812853732}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13e18a8b81dd24ad2ac39b28f9196e1e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &834489746
 GameObject:
   m_ObjectHideFlags: 0
@@ -44276,7 +44298,8 @@ Prefab:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95000010892109662, guid: 27dc7eba037b64a5f93605def427592a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 27dc7eba037b64a5f93605def427592a, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1890564775 stripped

@@ -119,10 +119,12 @@ public class SixteenBitController : MonoBehaviour {
 
 	public void Damage(int dmg){
 		curHealth -= dmg;
+		Debug.Log ("TEST: Take damage/remove health, SUCCESS");
 	}
 
 	public void AddHealth(int health){
 		curHealth += health;
+		Debug.Log ("TEST: Add health, SUCCESS");
 	}
 
 	public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector3 knockbackDir){
@@ -141,6 +143,8 @@ public class SixteenBitController : MonoBehaviour {
 			}
 	
 		}
+
+		Debug.Log ("TEST: Spikes knockback on impact, SUCCESS");
 		
 		yield return 0; //You must yield return "something" in IEnumerators.
 
@@ -156,6 +160,8 @@ public class SixteenBitController : MonoBehaviour {
 			rb2d.AddForce (new Vector3 (0, bouncePwr, transform.position.z));
 		}
 
+		Debug.Log ("TEST: Trampoline bounce, SUCCESS");
+
 		yield return 0;
 	}
 
@@ -168,6 +174,8 @@ public class SixteenBitController : MonoBehaviour {
 
 			rb2d.AddForce (new Vector3 (knockbackPwr, 500, transform.position.z));
 		}
+
+		Debug.Log ("TEST: Enemy knockback on impact, SUCCESS");
 
 		yield return 0;
 	}

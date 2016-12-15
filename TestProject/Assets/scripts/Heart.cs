@@ -16,6 +16,7 @@ public class Heart : MonoBehaviour {
 		if (col.CompareTag ("Player")) {
 
 			player.AddHealth (1);
+			Debug.Log ("TEST: Pick up heart, SUCCESS");
 			Destroy (gameObject);
 
 

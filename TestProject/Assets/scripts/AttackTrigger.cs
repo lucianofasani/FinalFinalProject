@@ -10,6 +10,7 @@ public class AttackTrigger : MonoBehaviour {
 		if (col.isTrigger != true) {
 		
 			col.SendMessageUpwards ("Damage", dmg);
+			Debug.Log ("TEST: Send a Damage method call to whatever enemy the attack collided with, SUCCESS");
 		}
 
 	}
