@@ -24,6 +24,7 @@ public class PlayerAttack : MonoBehaviour {
 			attackTimer = attackCd;
 
 			attackTrigger.enabled = true;
+			Debug.Log ("TEST: Attack when f is pressed, SUCCESS");
 		}
 
 		if (attacking) {

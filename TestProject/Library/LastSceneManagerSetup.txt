@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 sceneSetups: []
+||||||| merged common ancestors
+sceneSetups:
+- path: Assets/scenes/StageL1.unity
+  isLoaded: 1
+  isActive: 1
+=======
+sceneSetups:
+- path: Assets/scenes/ModernScene.unity
+  isLoaded: 1
+  isActive: 1
+>>>>>>> 09e07ffe1047b0fbc7eb2bc42b7e4f3d727c302a

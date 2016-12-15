@@ -70,6 +70,7 @@ public class SixteenBitEnemy : MonoBehaviour {
 		if (col.gameObject.tag == "Player") {
 
 			player.Damage (1);
+			Debug.Log ("TEST: Enemy cause player damage, SUCCESS");
 
 			if(dirRight == true){
 				StartCoroutine (player.EnemyKnockback (.01f, 1200, player.transform.position)); //Must start Coroutine for IEnumerator
@@ -84,6 +85,7 @@ public class SixteenBitEnemy : MonoBehaviour {
 	public void Damage(int damage){
 
 		curHealth -= damage;
+		Debug.Log ("TEST: Enemy take damage, SUCCESS");
 		//gameObject.GetComponent<Animation> ().Play ("Player_RedFlash");
 	}
 		

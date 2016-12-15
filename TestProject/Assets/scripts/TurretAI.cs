@@ -85,6 +85,7 @@ public class TurretAI : MonoBehaviour {
 				GameObject bulletClone;
 				bulletClone = Instantiate (bullet, shootPointLeft.transform.position, shootPointLeft.transform.rotation) as GameObject;
 				bulletClone.GetComponent<Rigidbody2D> ().velocity = direction * bulletSpeed;
+				Debug.Log ("TEST: Shoot left when in range, SUCCESS");
 
 				bulletTimer = 0;
 			} else {
@@ -92,6 +93,7 @@ public class TurretAI : MonoBehaviour {
 				GameObject bulletClone;
 				bulletClone = Instantiate (bullet, shootPointRight.transform.position, shootPointRight.transform.rotation) as GameObject;
 				bulletClone.GetComponent<Rigidbody2D> ().velocity = direction * bulletSpeed;
+				Debug.Log ("TEST: Shoot right when in range, SUCCESS");
 
 				bulletTimer = 0;
 			
@@ -105,6 +107,7 @@ public class TurretAI : MonoBehaviour {
 	public void Damage(int damage){
 
 		curHealth -= damage;
+		Debug.Log ("TEST: Remove health from turret, SUCCESS");
 		//gameObject.GetComponent<Animation> ().Play ("Player_RedFlash");
 	}
 
