@@ -5,10 +5,10 @@ using System.Collections;
 public class Powerups : MonoBehaviour {
 
     private CharacterControllerScript theController;
-
+    private EightBitCharControl eightController;
     // Use this for initialization
     void Start () {
-        theController = FindObjectOfType<CharacterControllerScript>();
+        eightController = FindObjectOfType<EightBitCharControl>();
 	}
 	
 	// Update is called once per frame
@@ -20,7 +20,7 @@ public class Powerups : MonoBehaviour {
     {
         if(other.name == "Player")
         {
-				theController.jump = true;
+                eightController.jump = true;
 				Destroy (gameObject);
         }
 
