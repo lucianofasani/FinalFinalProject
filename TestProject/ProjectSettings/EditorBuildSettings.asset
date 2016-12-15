@@ -21,3 +21,5 @@ EditorBuildSettings:
     path: Assets/scenes/Scene2Denae.unity
   - enabled: 1
     path: Assets/scenes/ModernScene.unity
+  - enabled: 1
+    path: Assets/scenes/Testing.unity
