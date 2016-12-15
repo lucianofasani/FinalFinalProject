@@ -23,8 +23,9 @@ GameObject:
   - 212: {fileID: 212000010673360134}
   - 111: {fileID: 111000013044585830}
   - 61: {fileID: 61000010659680096}
-  - 114: {fileID: 114000013108369584}
   - 50: {fileID: 50000010128935060}
+  - 114: {fileID: 114000014132136680}
+  - 114: {fileID: 114000013897730102}
   m_Layer: 10
   m_Name: Skeleton 1
   m_TagString: enemy
@@ -61,7 +62,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61000010659680096
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -107,7 +108,7 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114000013108369584
+--- !u!114 &114000013897730102
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -118,8 +119,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8648d5594f8704644bc27eb80578f621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 6
   direction: 1
+--- !u!114 &114000014132136680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011209130536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8772c2d487fa94a86bc67a9136372495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curHealth: 0
+  maxHealth: 2
+  speed: 8
+  min: 1000
+  max: 1000
+  enemy: {fileID: 1000011209130536}
+  leftRight: 0
+  childTransform: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!212 &212000010673360134
 SpriteRenderer:
   m_ObjectHideFlags: 1
